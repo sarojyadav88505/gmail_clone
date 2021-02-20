@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gmail_clone/data/classes/email.dart';
 
-import 'package:flutter_markdown/flutter_markdown.dart';
+
 
 class EmailView extends StatefulWidget {
   EmailView({
@@ -67,8 +67,11 @@ class _EmailViewState extends State<EmailView> {
         ),
         Expanded(
           child: Markdown(data: _preview),
-        ),
-      ],
-    );
-  }
+                  ),
+                ],
+              );
+            }
+          }
+          
+          Markdown({String data}) {
 }

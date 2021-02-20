@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gmail_clone/data/classes/email.dart';
-import 'package:intl/intl.dart';
+
 
 class EmailListTile extends StatelessWidget {
   const EmailListTile({
@@ -11,6 +11,8 @@ class EmailListTile extends StatelessWidget {
 
   final EmailItem item;
   final VoidCallback favoriteChanged;
+
+  get DateFormat => null;
 
   @override
   Widget build(BuildContext context) {
